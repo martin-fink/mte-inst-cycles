@@ -30,10 +30,13 @@
 int main() {
   bench_setup
 
-      // Benchmark loop
-      for (unsigned long long i = 0; i < ITERATIONS; i++){loop_setup op25}
+  // Benchmark loop
+  for (unsigned long long i = 0; i < ITERATIONS; i++) {
+    loop_setup
+    op25
+  }
 
   bench_teardown
 
-      return 0;
+  return 0;
 }
