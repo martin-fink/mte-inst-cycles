@@ -2,8 +2,6 @@
 
 # run all programs in the current directory ending in -latency with perf stat -e cpu-cycles. Then calculate the throughput.
 
-iterations=10000000000
-
 echo "benchmark,latency,throughput,uops"
 
 for f in ./*-baseline; do
