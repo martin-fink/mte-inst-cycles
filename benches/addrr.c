@@ -10,7 +10,6 @@
 #define op __asm__ volatile("add %0, %1, %2" : "+r"(x0) : "r"(x0), "r"(x1));
 #endif
 #ifdef BASELINE
-//#define ITERATIONS 0
 #define op __asm__ volatile("" : : : "memory");
 #endif
 

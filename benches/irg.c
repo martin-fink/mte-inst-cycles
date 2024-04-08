@@ -19,7 +19,6 @@
 #define op __asm__ volatile("irg %0, %1" : "=r"(x0) : "r"(x0));
 #endif
 #ifdef BASELINE
-//#define ITERATIONS 0
 #define op __asm__ volatile("" : : : "memory");
 #endif
 

@@ -29,7 +29,6 @@
 #define op __asm__ volatile("ldp %0, %1, [%0]" : "+r"(p), "=r"(x1) : : "memory");
 #endif
 #ifdef BASELINE
-//#define ITERATIONS 0
 #define op __asm__ volatile("" : : : "memory");
 #endif
 
